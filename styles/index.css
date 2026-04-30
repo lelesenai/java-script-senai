@@ -1,0 +1,27 @@
+*{
+padding: 0%;
+margin: 0%;
+
+
+}
+
+body{ 
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/1200x/62/68/27/6268273e6504b2e72fdc85155f02bea1.jpg);
+    background-size: cover;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#bgSerena{
+    width: 300px;
+    background-image: url(https://i.pinimg.com/originals/72/85/57/7285572749461ad802cec43cf9db8838.gif);
+}
+
+#icone{
+    width: 100%;
+}
