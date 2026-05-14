@@ -1,0 +1,48 @@
+/* Remove qualquer espaço em branco em volta da página */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita que a página "dance" para os lados */
+    background-color: #c13a3a; /* Cor do fundo igual ao topo/rodapé do banco */
+}
+
+.site-container {
+    position: relative;
+    width: 100%;
+    /* Removemos o max-width para ele crescer até o limite da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-fundo {
+    width: 100%;      /* Força a imagem a ocupar 100% da largura do navegador */
+    height: auto;     /* Mantém a proporção (não achata a imagem) */
+    display: block;
+}
+
+/* Base dos botões (clicáveis por cima da foto) */
+.botao-link {
+    position: absolute;
+    cursor: pointer;
+    /* Para ver os botões enquanto ajusta, use a linha abaixo: */
+    /* background: rgba(0, 255, 0, 0.4); */
+}
+
+/* --- AJUSTE DE POSIÇÃO DOS BOTÕES --- */
+/* Como a imagem agora estica, use PORCENTAGEM (%) em vez de PX. 
+   Assim o botão acompanha a imagem quando ela crescer ou diminuir. */
+
+#btn1 {
+    top: 1.5%;    /* Distância do topo em relação ao tamanho da imagem */
+    right: 3%;    /* Distância da direita */
+    width: 10%;   /* Largura do botão "Abra sua conta" */
+    height: 3%;   /* Altura do botão */
+}
+
+#btn2 {
+    top: 16%;
+    left: 2%;
+    width: 12%;
+    height: 4%;
+}
